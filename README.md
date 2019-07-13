@@ -9,6 +9,5 @@
 3. manual verification and remove the irrelevant frames. 
 
 ##### The automatic process reduces the search space significantly and the manual verification process ensure that only the relevant knowledge is utilised to avoid introducing noise to our system.
-<br/>
 
 ##### Since a relation extraction system normally involves few and limited relation types,  this pre-processing step won't take too long. Besides, it is convenient to add new relations to the existing system by expanding the relation indicators.
