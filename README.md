@@ -1,37 +1,12 @@
-## Welcome to GitHub Pages
+## Frame Extraction
 
-You can use the [editor on GitHub](https://github.com/proj-demo/r2q3/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### Semi-automatic Frame Extraction from FrameNet 
+<br />
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+##### In our knowledge-attention mechanism, the pre-processing step of extracting relevant frames from FrameNet can be easily done through the following semi-automatic process:
+1. automatic frame extraction through frame index keywords matching with relation types and its synonyms automatically obtained from Thesaurus.com;
+2. automatic extract all the related frames through inter-frame relations provided by FrameNet;
+3. manual verification and remove the irrelevant frames. 
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/proj-demo/r2q3/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+##### The automatic process reduces the search space significantly and the manual verification process ensure that only the relevant knowledge is utilised to avoid introducing noise to our system.
+##### Since a relation extraction system normally involves few and limited relation types,  this pre-processing step won't take too long. Besides, it is convenient to add new relations to the existing system by expanding the relation indicators.
